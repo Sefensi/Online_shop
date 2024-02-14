@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+
+  max-width: 1600px;
+}
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  min-height: 75px;
+}
+.logo_search {
+  display: flex;
+  gap: 41px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header__links {
+  display: flex;
+  gap: 34px;
+}
+.btn_low {
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+.header_links_text_home {
+  color: #f25822;
+  text-decoration: none;
+}
+.upper_content {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  background-color: #f1e4e6;
+}
+.upper_content_photo {
+  display: flex;
+  justify-content: flex-end;
+}
+.top_content {
+  display: flex;
+  width: 568px;
+  align-items: center;
+  justify-content: center;
+}
+.content_miniblock {
+  border-left: 12px solid #f16d7f;
+  max-width: 495px;
+  max-height: 161px;
+  text-align: justify;
+  padding-left: 16px;
+}
+.fashion_color {
+  color: #f16d7f;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.top_content__description {
+  text-transform: uppercase;
+  font: 900;
+  font-size: 48px;
+}
+.top_content__text {
+  color: #222222;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.watch_video___link {
+  display: flex;
+  text-decoration: none;
+}
+.content__btns_text {
+  color: #aaaaaa;
+}
+.btn_high {
+  background-color: #f25822;
+  width: 140px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  color: #ffffff;
+}
+.middle_content {
+  margin-top: 65px;
+}
+.middle_content {
+  display: grid;
+  border: 0;
+  min-width: 1600px;
+  gap: 30px;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+}
+.item {
+  position: absolute;
+}
+.middle_content_item4 {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
+}
+.mcint_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #211616;
+}
+.img_oppacity {
+  opacity: 30%;
+  width: 100%;
+  
+}
+.mcint_photo_text {
+  position: absolute;
+  text-align: center;
+  font: 400;
+  font-size: 16px;
+}
+.mcint_photo_text_red {
+  color: #f16d7f;
+  font: 700;
+  font-size: 24px;
+}
