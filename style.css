@@ -5,8 +5,15 @@
 body {
   font-family: "Lato", sans-serif;
   font-style: normal;
-  display: contents;
-  max-width: 1600px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.top {
+  display: flex;
+  width: 1600px;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .center {
   padding-left: calc(50% - 570px);
@@ -19,7 +26,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #222222;
-  min-height: 75px;
+  height: 75px;
 }
 .logo_search {
   display: flex;
@@ -32,7 +39,7 @@ body {
 }
 .header__links {
   display: flex;
-  gap: 34px;
+  gap: 33px;
 }
 .btn_low {
   background-color: inherit;
@@ -44,25 +51,22 @@ body {
   text-decoration: none;
 }
 .upper_content {
-  display: grid;
-
-  grid-template-columns: 50% 50%;
+  display: flex;
   background-color: #f1e4e6;
-}
-.upper_content_photo {
-  display: flex;
-  justify-content: flex-end;
-}
-.top_content {
-  display: flex;
-  width: 568px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
   align-items: center;
+  gap: 64px;
   justify-content: center;
 }
+.upper_content_photo {
+  width: 800px;
+  height: 763px;
+}
+
 .content_miniblock {
   border-left: 12px solid #f16d7f;
-  max-width: 495px;
-  max-height: 161px;
   text-align: justify;
   padding-left: 16px;
 }
@@ -73,12 +77,13 @@ body {
 }
 .top_content__description {
   text-transform: uppercase;
-  font: 900;
+  font-weight: 900;
   font-size: 48px;
 }
 .top_content__text {
   color: #222222;
   font-size: 32px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -103,9 +108,10 @@ body {
 .middle_content {
   display: grid;
   border: 0;
-  min-width: 1600px;
+  width: 100%;
   gap: 30px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: 260px 180px;
   justify-content: center;
 }
 .item {
@@ -131,12 +137,12 @@ body {
 .mcint_photo_text {
   position: absolute;
   text-align: center;
-  font: 400;
+  font-weight: 400;
   font-size: 16px;
 }
 .mcint_photo_text_red {
   color: #f16d7f;
-  font: 700;
+  font-weight: 700;
   font-size: 24px;
 }
 .FI_block {
@@ -150,14 +156,14 @@ body {
   margin-bottom: 46px;
 }
 .FI_head_text {
-  font: 400;
+  font-weight: 400;
   font-size: 30px;
   color: #222222;
   padding-top: 0;
   text-align: center;
 }
 .FI_head_text_description {
-  font: 400;
+  font-weight: 400;
   font-size: 14px;
   color: #9f9f9f;
 }
@@ -173,9 +179,8 @@ body {
   min-height: 420px;
 }
 .FI_grid_content {
-  max-width: 1140px;
   display: flex;
-  gap: 30px;
+  gap: 16px;
   row-gap: 25px;
   flex-wrap: wrap;
 }
@@ -189,18 +194,19 @@ body {
   margin: 24px 16px 24px 16px;
 }
 .item_head_text {
-  font: 400;
+  font-weight: 400;
   font-size: 13px;
   color: #000000;
 }
 .item_description_text {
-  font: 300;
+  font-weight: 300;
   font-size: 14px;
   color: #5d5d5d;
   margin: 16px 0 16px 0;
+  padding-right: 15px;
 }
 .price_text {
-  font: 400;
+  font-weight: 400;
   font-size: 16px;
   color: #f16d7f;
 }
@@ -211,6 +217,49 @@ body {
   background-color: inherit;
   margin: 48px 0 60px 0;
   font-size: 16px;
-  font: 400;
+  font-weight: 400;
   color: #f26376;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Стили для планшета  */
+  .top {
+    max-width: 100%;
+    min-width: 768px;
+  }
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .header {
+    height: 74px;
+  }
+  .upper_content {
+    gap: 39px;
+  }
+  .upper_content_photo {
+    width: 386px;
+    height: 368px;
+  }
+  .top_content {
+    width: 368px;
+  }
+  .middle_content {
+    max-width: 100%;
+    min-width: 768px;
+  }
+  .top_content__description {
+    font-size: 44px;
+  }
+  .top_content__text {
+    font-size: 24px;
+  }
+  .middle_content {
+    display: grid;
+    border: 0;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(3, 232px);
+    grid-template-rows: 168px 116px;
+    justify-content: center;
+  }
 }
