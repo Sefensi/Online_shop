@@ -5,7 +5,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-style: normal;
-
+  display: contents;
   max-width: 1600px;
 }
 .center {
@@ -127,7 +127,6 @@ body {
 .img_oppacity {
   opacity: 30%;
   width: 100%;
-  
 }
 .mcint_photo_text {
   position: absolute;
@@ -139,4 +138,79 @@ body {
   color: #f16d7f;
   font: 700;
   font-size: 24px;
+}
+.FI_block {
+  margin-top: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.FI_block_head {
+  margin-bottom: 46px;
+}
+.FI_head_text {
+  font: 400;
+  font-size: 30px;
+  color: #222222;
+  padding-top: 0;
+  text-align: center;
+}
+.FI_head_text_description {
+  font: 400;
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.item_block {
+  max-height: 587px;
+  max-width: 360px;
+  background-color: #f8f8f8;
+}
+.second_item_img {
+  display: flex;
+  justify-content: center;
+  background-color: #f7e4e2;
+  min-height: 420px;
+}
+.FI_grid_content {
+  max-width: 1140px;
+  display: flex;
+  gap: 30px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+}
+.item_block_img1 {
+  opacity: 86%;
+}
+.item_block_photo {
+  max-height: 420px;
+}
+.item_text_block {
+  margin: 24px 16px 24px 16px;
+}
+.item_head_text {
+  font: 400;
+  font-size: 13px;
+  color: #000000;
+}
+.item_description_text {
+  font: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+  margin: 16px 0 16px 0;
+}
+.price_text {
+  font: 400;
+  font-size: 16px;
+  color: #f16d7f;
+}
+.FI_lower_btn {
+  border: 1px solid #ff6a6a;
+  height: 48px;
+  width: 212px;
+  background-color: inherit;
+  margin: 48px 0 60px 0;
+  font-size: 16px;
+  font: 400;
+  color: #f26376;
 }
