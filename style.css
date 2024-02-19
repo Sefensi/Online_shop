@@ -29,6 +29,7 @@ body {
   height: 75px;
 }
 .logo_search {
+  margin-left: 1px;
   display: flex;
   gap: 41px;
   align-items: flex-end;
@@ -40,6 +41,7 @@ body {
 .header__links {
   display: flex;
   gap: 33px;
+  margin-right: 10px;
 }
 .btn_low {
   background-color: inherit;
@@ -51,20 +53,19 @@ body {
   text-decoration: none;
 }
 .upper_content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
   background-color: #f1e4e6;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
-  gap: 64px;
-  justify-content: center;
 }
 .upper_content_photo {
   width: 800px;
   height: 763px;
 }
-
+.upper_content_miniblock {
+  width: 405px;
+  margin-left: 64px;
+}
 .content_miniblock {
   border-left: 12px solid #f16d7f;
   text-align: justify;
@@ -102,10 +103,9 @@ body {
   border: 0;
   color: #ffffff;
 }
+
 .middle_content {
   margin-top: 65px;
-}
-.middle_content {
   display: grid;
   border: 0;
   width: 100%;
@@ -220,8 +220,157 @@ body {
   font-weight: 400;
   color: #f26376;
 }
+.footer_block {
+  position: relative;
+}
+.FB_about {
+  align-content: center;
+  height: 341px;
+  background-color: #222224;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.FB_about_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 134px;
+}
+.FB_about_item_title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fbfbfb;
+}
+.FB_about_item_description {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fbfbfb;
+  text-align: center;
+  /* margin-top: 16px; */
+}
+.back {
+  opacity: 30%;
+  background-color: #f4f4f4;
+  z-index: -2;
+}
+
+.FB_reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe_block_undo {
+  /* position: relative; */
+}
+.subscribe_block {
+  opacity: 100%;
+  position: absolute;
+  display: flex;
+  width: 1140px;
+  justify-content: space-between;
+}
+.subscribe_info {
+  display: flex;
+  width: 360px;
+  gap: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.subscribe_info_text {
+  height: 100px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222224;
+  text-align: center;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.subscribe_title {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 167.2%;
+  font-weight: bold;
+  font-size: 24px;
+}
+.subscribe_lower_title {
+  font-weight: 400;
+  font-size: 18px;
+}
+.form {
+  width: 356px;
+  height: 49px;
+  display: flex;
+  border: 0;
+  border-radius: 50px;
+  position: relative;
+  background-color: #e1e1e1;
+}
+.placeholder {
+  position: absolute;
+  height: 49px;
+  width: 170px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe_input {
+  border: 0;
+  width: 256px;
+  background-color: #e1e1e1;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  opacity: 33%;
+  z-index: 2;
+}
+
+.subscribe_btn {
+  width: 100px;
+  border: 0;
+  background-color: #f16d7f;
+  cursor: pointer;
+  color: #ffffff;
+
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.FB_logos {
+  height: 79px;
+  display: flex;
+  background-color: #222224;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.rights {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.footer_logos {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+/* Стили для планшета  */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Стили для планшета  */
   .top {
     max-width: 100%;
     min-width: 768px;
@@ -233,24 +382,29 @@ body {
   .header {
     height: 74px;
   }
-  .upper_content {
-    gap: 39px;
+
+  .upper_content_miniblock {
+    width: 311px;
+    margin-left: 39px;
   }
+
   .upper_content_photo {
     width: 386px;
     height: 368px;
   }
-  .top_content {
-    width: 368px;
-  }
+
   .middle_content {
     max-width: 100%;
     min-width: 768px;
   }
+
   .top_content__description {
     font-size: 44px;
   }
   .top_content__text {
+    font-size: 24px;
+  }
+  .fashion_color {
     font-size: 24px;
   }
   .middle_content {
@@ -261,5 +415,190 @@ body {
     grid-template-columns: repeat(3, 232px);
     grid-template-rows: 168px 116px;
     justify-content: center;
+  }
+  .FB_about {
+    height: 610px;
+    gap: 48px;
+  }
+  .FB_reviews {
+    align-items: flex-start;
+    padding-top: 64px;
+  }
+  .back {
+    /* width: 768px; */
+    min-width: 100%;
+
+    height: 693px;
+    overflow: hidden;
+    position: relative;
+  }
+  .back_im {
+    /* margin-top: unset; */
+
+    min-width: 768px;
+    /* max-width: 1024px; */
+    /* width: auto; */
+    /* display: block; */
+    /* width: 768px; */
+    /* object-fit: cover; */
+    /* object-position: bottom; */
+  }
+  .back_img {
+    position: absolute;
+    height: 100%;
+    margin-left: -400px;
+    margin-top: 70px;
+    /* left: -35%;
+    bottom: -12%; */
+    /* width: 100%; */
+
+    /* overflow: hidden; */
+  }
+  .subscribe_block {
+    /* position: relative; */
+    /* min-width: 768px; */
+    /* max-width: 1024px; */
+    width: 768px;
+    min-width: 768px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-top: 0;
+  }
+}
+
+/* Для мобильных устройств */
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .top {
+    max-width: 767px;
+    min-width: 375px;
+  }
+  .center {
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+  }
+  .logo_search {
+    margin-left: 8px;
+  }
+  .header__links {
+    margin-right: 8px;
+  }
+  .header__links .btn_low {
+    display: none;
+  }
+  .header__links .btn_low:first-child {
+    /* background-color: lime; */
+    display: flex;
+  }
+  .upper_content {
+    display: flex;
+    height: 363px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .upper_content_miniblock {
+    width: 263px;
+    margin-left: 0;
+  }
+
+  .upper_content_photo {
+    display: none;
+    width: 343px;
+    height: 247px;
+  }
+
+  .middle_content {
+    max-width: 100%;
+    min-width: 375px;
+    gap: 32px;
+    margin-top: 64px;
+    display: flex;
+    border: 0;
+    /* width: 100%; */
+    flex-wrap: wrap;
+  }
+  .top_content__description {
+    font-size: 38px;
+  }
+  .top_content__text {
+    font-size: 20px;
+  }
+  .fashion_color {
+    font-size: 20px;
+  }
+
+  .FB_about {
+    height: 610px;
+    gap: 46px;
+  }
+  .FB_reviews {
+    align-items: flex-start;
+    padding-top: 64px;
+  }
+  .back {
+    min-width: 100%;
+
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+  }
+  .back_im {
+    /* margin-top: unset; */
+
+    min-width: 768px;
+    /* max-width: 1024px; */
+    /* width: auto; */
+    /* display: block; */
+    /* width: 768px; */
+    /* object-fit: cover; */
+    /* object-position: bottom; */
+  }
+  .back_img {
+    position: absolute;
+    height: 100%;
+    margin-left: -400px;
+    margin-top: 70px;
+    /* left: -35%;
+    bottom: -12%; */
+    /* width: 100%; */
+
+    /* overflow: hidden; */
+  }
+  .subscribe_block {
+    /* position: relative; */
+    /* min-width: 768px; */
+    /* max-width: 1024px; */
+    width: 375px;
+    /* min-width: 375px; */
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+    margin-top: 0;
+  }
+  .subscribe_info {
+    height: 194px;
+    flex-wrap: nowrap;
+    gap: 29px;
+  }
+  .subscribe_title {
+    line-height: 153.2%;
+  }
+  .subscribe {
+    gap: 22px;
+  }
+  .FB_logos {
+    padding-bottom: 9px;
+    height: 143px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    /* align-content: center; */
+  }
+  .rights {
+    padding-bottom: 9px;
+  }
+  .footer_logos {
+    padding-top: 43px;
   }
 }
